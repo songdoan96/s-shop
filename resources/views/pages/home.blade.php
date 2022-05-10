@@ -12,7 +12,7 @@
             <!--features_items-->
             <h2 class="title text-center " style="margin:3rem 0;">Sản phẩm mới nhất</h2>
             @foreach ($products as $product)
-                <div class="col-xs-12 col-sm-6 col-md-3 mb-3">
+                <div class="col-xs-6 col-sm-4 col-md-3 mb-3">
                     <div class="product-grid3">
                         <div class="product-image3">
                             <a href="{{ route('product.details', $product->slug) }}">
@@ -98,7 +98,7 @@
 
                         @if (count($products_tab) > 0)
                             @foreach ($products_tab as $product)
-                                <div class="col-sm-3">
+                                <div class="col-xs-6 col-sm-4 col-md-3">
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
@@ -153,7 +153,7 @@
                     @foreach ($chunks as $key => $chunk)
                         <div class="item {{ $key == 0 ? 'active' : null }}">
                             @foreach ($chunk as $product)
-                                <div class="col-sm-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
