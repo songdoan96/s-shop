@@ -29,10 +29,10 @@ class HomeController extends Controller
     public function index()
     {
 
-        // if (Auth::user()) {
-        //     Cart::instance('cart')->restore(Auth::user()->email);
-        //     Cart::instance('wishlist')->restore(Auth::user()->email);
-        // }
+        if (Auth::user()) {
+            Cart::instance('cart')->restore(Auth::user()->email);
+            Cart::instance('wishlist')->restore(Auth::user()->email);
+        }
         $products = Product::where('status', '1')->orderBy('updated_at', 'desc')->take(12)->get();
         $tabs = explode("|", DB::table("tab_category_home")->first()->select_categories);
         $categories_tab = Category::find($tabs);

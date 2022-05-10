@@ -29,9 +29,9 @@ class WishlistController extends Controller
             $request->qty,
             (int)($request->price)
         )->associate('App\Models\Product');
-        // if (Auth::user()) {
-        //     Cart::instance('wishlist')->store(Auth::user()->email);
-        // }
+        if (Auth::user()) {
+            Cart::instance('wishlist')->store(Auth::user()->email);
+        }
         return Cart::instance('wishlist')->content()->count();
     }
 

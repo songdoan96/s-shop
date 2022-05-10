@@ -33,9 +33,9 @@ class CartController extends Controller
             $request->qty,
             (int)($request->price)
         )->associate('App\Models\Product');
-        // if (Auth::user()) {
-        //     Cart::instance('cart')->store(Auth::user()->email);
-        // }
+        if (Auth::user()) {
+            Cart::instance('cart')->store(Auth::user()->email);
+        }
 
         return Cart::instance('cart')->content()->count();
     }
