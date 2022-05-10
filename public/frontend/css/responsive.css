@@ -184,10 +184,12 @@
 
     .mainmenu {
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .mainmenu ul li {
-        background: rgba(0, 0, 0, 0.5);
+        /* background: rgba(0, 0, 0, 0.5); */
+        background-color: #fff;
         padding-top: 15px;
         padding-bottom: 0;
     }
@@ -197,7 +199,7 @@
     }
 
     .mainmenu ul li a {
-        color: #fff;
+        color: #000;
     }
 
     .navbar-collapse.in {
@@ -386,10 +388,12 @@
 
     .mainmenu {
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .mainmenu ul li {
-        background: rgba(0, 0, 0, 0.5);
+        /* background: rgba(0, 0, 0, 0.5); */
+        background-color: #fff;
         padding-top: 15px;
         padding-bottom: 0;
     }
@@ -399,7 +403,7 @@
     }
 
     .mainmenu ul li a {
-        color: #fff;
+        color: #000;
         padding-bottom: 0;
     }
 
