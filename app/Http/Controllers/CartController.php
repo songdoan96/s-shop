@@ -69,7 +69,9 @@ class CartController extends Controller
     {
         Cart::instance('cart')->remove($request->rowId);
         toast('Đã xóa sản phẩm', 'success');
-
+        if (Auth::user()) {
+            Cart::instance('cart')->store(Auth::user()->email);
+        }
         return 1;
     }
 }

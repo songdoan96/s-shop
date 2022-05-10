@@ -59,7 +59,6 @@ class SocialAuthController extends Controller
 
     function socialCallback($provider)
     {
-        dd($provider);
         $user = Socialite::driver($provider)->user();
         return $this->createOrUpdateUser($user, $provider);
     }
