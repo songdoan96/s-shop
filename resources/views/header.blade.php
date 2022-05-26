@@ -8,7 +8,7 @@
         <!--header_top-->
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-xs-12 col-sm-6">
                     <div class="contactinfo">
                         <ul class="nav nav-pills">
                             <li><a href="#"><i class="fa fa-phone"></i> {{ $settings->phone }}</a></li>
@@ -16,7 +16,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-xs-12 col-sm-6">
                     <div class="social-icons pull-right shop-menu shop-menu-top">
                         <ul class="nav navbar-nav">
 
