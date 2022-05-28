@@ -11,7 +11,7 @@
                 <h2 class="title text-center">{{ $name }}</h2>
                 @if (Route::current()->getName() != 'shop.search')
                     <div class="row price-ranger-filter">
-                        <div class="col-sm-4">
+                        <div class="col-xs-6 col-sm-4">
                             <label for="">Sắp xếp</label>
                             <select class="form-control" name="sort" id="sort">
                                 <option value="all" selected="">Tất cả</option>
@@ -30,7 +30,7 @@
                                 </option>
                             </select>
                         </div>
-                        <div class="col-sm-6 pull-right">
+                        <div class="col-xs-6 col-sm-6 pull-right">
                             <div class="price-title">
                                 <label for="amount">Giá: </label>
                                 <input type="text" id="amount" readonly disabled>
