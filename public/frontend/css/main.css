@@ -987,7 +987,6 @@ h2.title {
 
 .category-tab ul {
     background: #fff;
-    /* border-bottom: 1px solid var(--primary-color); */
     list-style: none outside none;
     margin: 0 0 30px;
     padding: 0;
@@ -1016,7 +1015,6 @@ h2.title {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    /* background-color: var(--primary-color); */
     border: 1px solid var(--primary-color);
     border-bottom: none;
     color: #333;
