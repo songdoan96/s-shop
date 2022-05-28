@@ -35,11 +35,11 @@
           <div class="single-widget">
             <h2>Shop</h2>
             <ul class="nav nav-pills nav-stacked">
-              <li><a href="">Link 2</a></li>
-              <li><a href="">Link 2</a></li>
-              <li><a href="">Link 2</a></li>
-              <li><a href="">Link 2</a></li>
-              <li><a href="">Link 2</a></li>
+              <li><a href="">Shop link 2</a></li>
+              <li><a href="">Shop link 2</a></li>
+              <li><a href="">Shop link 2</a></li>
+              <li><a href="">Shop link 2</a></li>
+              <li><a href="">Shop link 2</a></li>
             </ul>
           </div>
         </div>
