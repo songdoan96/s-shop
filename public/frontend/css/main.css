@@ -468,7 +468,10 @@ ul.sub-menu {
     border-top: 1px solid #ffffff;
     padding-top: 15px;
 }
-
+.footer-widget .row {
+    display:flex;
+    flex-wrap:wrap;
+}
 .single-widget h2 {
     color: #666663;
     font-family: "Roboto", sans-serif;
@@ -508,6 +511,7 @@ ul.sub-menu {
     outline: medium none;
     padding: 7px;
     width: 212px;
+    width:100%;
 }
 
 .searchform button {

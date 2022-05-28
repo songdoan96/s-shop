@@ -7,7 +7,7 @@
   <div class="footer-widget">
     <div class="container">
       <div class="row">
-        <div class="col-sm-2">
+        <div class="col-xs-6 col-md-3">
           <div class="single-widget">
             <h2>Thông tin liên hệ</h2>
             <ul class="nav nav-pills nav-stacked">
@@ -31,7 +31,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-xs-6 col-md-3">
           <div class="single-widget">
             <h2>Shop</h2>
             <ul class="nav nav-pills nav-stacked">
@@ -43,7 +43,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-xs-6 col-md-3">
           <div class="single-widget">
             <h2>Điều khoản</h2>
             <ul class="nav nav-pills nav-stacked">
@@ -55,19 +55,8 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="single-widget">
-            <h2>Về chúng tôi</h2>
-            <ul class="nav nav-pills nav-stacked">
-              <li><a href="">Link 4</a></li>
-              <li><a href="">Link 4</a></li>
-              <li><a href="">Link 4</a></li>
-              <li><a href="">Link 4</a></li>
-              <li><a href="">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-3 col-sm-offset-1">
+       
+        <div class="col-xs-6 col-md-3">
           <div class="single-widget">
             <h2>Đăng ký nhận tin</h2>
             <form action="#" class="searchform">
