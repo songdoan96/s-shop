@@ -1016,7 +1016,7 @@ h2.title {
     margin-bottom: 1rem;
 }
 .nav-tabs li.active {
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 .nav-tabs li.active a,
 .nav-tabs li.active a:hover,
