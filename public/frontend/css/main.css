@@ -1007,7 +1007,18 @@ h2.title {
     background: var(--primary-color);
     color: #fff;
 }
-
+.nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: none;
+}
+.nav-tabs li {
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+.nav-tabs li.active {
+    border-bottom: none !important;
+}
 .nav-tabs li.active a,
 .nav-tabs li.active a:hover,
 .nav-tabs li.active a:focus {
@@ -1016,7 +1027,7 @@ h2.title {
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     border: 1px solid var(--primary-color);
-    border-bottom: none;
+    border-bottom: none !important;
     color: #333;
     cursor: default;
     margin-right: 0;
@@ -1052,9 +1063,6 @@ h2.title {
 
 .recommended-item-control i:hover {
     background: #ccccc6;
-}
-
-.recommended_items h2 {
 }
 
 .our_partners {
