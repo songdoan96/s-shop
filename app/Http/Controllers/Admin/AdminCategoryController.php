@@ -21,7 +21,7 @@ class AdminCategoryController extends Controller
 
     function showTab()
     {
-        $categories = Category::where('status', '1')->get();
+        $categories = Category::where('status', 1)->get();
         $tabs = explode("|", DB::table("tab_category_home")->first()->select_categories);
         return view('pages.admin.category.tab', compact('categories', 'tabs'));
     }

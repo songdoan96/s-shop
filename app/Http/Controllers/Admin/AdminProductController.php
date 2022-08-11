@@ -24,8 +24,8 @@ class AdminProductController extends Controller
     public function index()
     {
         $products = Product::paginate(5);
-        $categories = Category::where('status', '1')->get();
-        $brands = Brand::where('status', '1')->get();
+        $categories = Category::where('status', 1)->get();
+        $brands = Brand::where('status', 1)->get();
         return view('pages.admin.product.all', compact('products', 'categories', 'brands'));
     }
 
@@ -104,8 +104,8 @@ class AdminProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-        $categories = Category::where('status', '1')->get();
-        $brands = Brand::where('status', '1')->get();
+        $categories = Category::where('status', 1)->get();
+        $brands = Brand::where('status', 1)->get();
         return view('pages.admin.product.edit', compact('product', 'categories', 'brands'));
     }
 

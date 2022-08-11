@@ -13,13 +13,13 @@ class ShopController extends Controller
     {
 
         if ($request->brand) {
-            $products = Product::where('status', '1')->where('brand_id', $request->brand);
+            $products = Product::where('status', 1)->where('brand_id', $request->brand);
             $name = Brand::find($request->brand)->name;
         } else if ($request->category) {
-            $products = Product::where('status', '1')->where('category_id', $request->category);
+            $products = Product::where('status', 1)->where('category_id', $request->category);
             $name = Category::find($request->category)->name;
         } else {
-            $products = Product::where('status', '1');
+            $products = Product::where('status', 1);
             $name = "Sản phẩm";
         }
 
@@ -57,7 +57,7 @@ class ShopController extends Controller
 
     function shop_search(Request $request)
     {
-        $products = Product::where('name', 'LIKE', '%' . $request->search . '%')->where('status', '1')->paginate(9);
+        $products = Product::where('name', 'LIKE', '%' . $request->search . '%')->where('status', 1)->paginate(9);
         $name = "Kết quả tìm kiếm: $request->search";
         return view('pages.shop', compact('products', 'name'));
     }

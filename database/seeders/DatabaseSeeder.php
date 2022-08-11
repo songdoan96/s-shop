@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             'role' => "admin",
         ]);
         DB::table('tab_category_home')->insert([
-            'select_categories' => "1",
+            'select_categories' => "1|2|3|4|5|6|7|8",
         ]);
 
 
