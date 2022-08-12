@@ -220,10 +220,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth', 'isAdmin']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
-
-
-
-Route::get('/clear-cart', function () {
-    DB::table('shoppingcart')->truncate();
-    return redirect('/');
-});
